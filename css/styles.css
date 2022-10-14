@@ -394,10 +394,6 @@ body {
     .container {
         max-width: 250px;
     }
-    .scheme-svg {
-        
-        overflow: scroll;
-    }
     .button {
         padding: 5px 5px;
         font: 16px;
@@ -409,7 +405,6 @@ body {
         font: 50px;
     }
     .legend {
-        overflow-x:scroll;
         font: 20px;
         width: 500px;
         margin-right: 500px;
