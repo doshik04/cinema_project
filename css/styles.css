@@ -206,7 +206,6 @@ body {
 }
 .legend {
     display: flex;
-    align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     max-width: 1024px;
     margin: auto;
@@ -214,27 +213,18 @@ body {
     padding-top: 22px;
     padding-bottom: 38px;
 }
-.svg-free {
-    max-width: 39px; 
-    max-height: 32px;    
-}
-.svg-active {
-    max-width: 39px; 
-    max-height: 32px; 
-}
-.svg-booked {
-    max-width: 39px; 
-    max-height: 32px;
-}
 
 .legend-label {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 50px;
+    padding-right: 50px;
     color: rgba(255, 255, 255, 0.5);
 }
 .legend svg {
-    margin-right: 15px;
+    width: 39px;
+    height: 32px;
+    padding-right: 20px;
 }
 .price {
     padding-top: 20px;
@@ -264,7 +254,6 @@ body {
     color: #ffffff;
     padding: 24px 52px;
     text-decoration: none;
-   
 }
 @media (max-width: 1304px) {
     .container {
@@ -351,17 +340,18 @@ body {
         margin-top: 0px;
     }
     .legend {
-       
+        justify-content: space-between;
     }
-   
-    
+    .legend-label {
+        font: 16px;
+    }
 }
 @media (max-width: 504px) {
     .container {
         max-width: 350px;
     }
     .legend {
-        
+        text-align: justify;
     }
     .user-hello {
         margin-left: 50px;
@@ -405,8 +395,5 @@ body {
         font: 50px;
     }
     .legend {
-        font: 20px;
-        width: 500px;
-        margin-right: 500px;
     }
 }
